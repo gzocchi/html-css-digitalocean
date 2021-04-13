@@ -1,6 +1,12 @@
 body {
   font-family: "Lato", sans-serif;
   padding-top: 51px;
+  font-size: 16px;
+  color: #a2aabc;
+}
+header > section,
+main > section {
+  padding: 51px 0;
 }
 
 /* ----- header ----- */
@@ -73,6 +79,78 @@ body {
   background-color: rgba(43, 131, 255, 0.103);
 }
 
+/* jumbotron */
+#jumbotron {
+  background-image: url(../img/bg-banner-home.jpg);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+#jumbotron h1 {
+  color: #ffffff;
+  font-size: 3.8em;
+  font-weight: 700;
+}
+#jumbotron p {
+  font-weight: 700;
+}
+
+.login_col {
+  background-color: #ffffff;
+  padding: 20px 15px;
+  border-radius: 5px;
+}
+.login_col h3 {
+  color: #031c4e;
+  font-weight: 700;
+}
+.login_col h3.light_blu {
+  color: #006aff;
+  margin-top: 10px;
+}
+.login_col p {
+  font-size: 0.5em;
+  color: #031c4e;
+}
+.login_col p > a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-default:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.btn_login_blue {
+  color: #ffffff;
+  background-color: #579aff;
+  border: 1px solid #579aff;
+  /* transition: all 0.2s linear; */
+}
+.btn_login_blue:hover {
+  color: #031c4e;
+  border-color: #031c4e;
+}
+
+.btn_google {
+  position: relative;
+}
+.btn_google > img {
+  height: 15px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* ----- main ----- */
 
 /* ----- footer ----- */
@@ -80,6 +158,7 @@ body {
 /* ----- media ----- */
 /* cambio range navbar collapse */
 @media (max-width: 991px) {
+  /* navbar */
   .navbar-header {
     float: none;
   }
@@ -103,5 +182,16 @@ body {
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  /* jumbotron */
+  #jumbotron h1 {
+    font-size: 2.4em;
+  }
+  .login_col h3 {
+    font-size: 1.8em;
+  }
+  .login_col p {
+    font-size: 0.6em;
   }
 }
