@@ -1,3 +1,107 @@
 body {
   font-family: "Lato", sans-serif;
+  padding-top: 51px;
+}
+
+/* ----- header ----- */
+
+/* navbar */
+.my_navbar.navbar {
+  margin-bottom: 0;
+}
+.my_navbar.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.my_navbar .navbar-brand > img {
+  height: 100%;
+  margin-right: 50px;
+}
+
+.my_navbar .navbar-collapse:first-child {
+  margin-left: 50px;
+}
+
+.my_navbar.navbar-default .navbar-nav > li > a,
+.my_navbar .dropdown-menu > li > a,
+.my_navbar.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+  color: #031c4e;
+}
+.my_navbar.navbar-default .navbar-nav > .open > a,
+.my_navbar.navbar-default .navbar-nav > .open > a:focus,
+.my_navbar.navbar-default .navbar-nav > .open > a:hover {
+  color: #ffffff;
+  background-color: #2b83ff;
+}
+.my_navbar .nav .open > a,
+.my_navbar .nav .open > a:focus,
+.my_navbar .nav .open > a:hover {
+  background-color: transparent;
+  border-color: #2b83ff;
+  border-radius: 2px;
+}
+
+.btn_white {
+  color: #2b83ff;
+  background-color: #ffffff;
+  border-color: #2b83ff;
+  transition: all 0.2s linear;
+}
+.btn_white:hover {
+  color: #ffffff;
+  background-color: #2b83ff;
+}
+
+.my_navbar.navbar-default .navbar-toggle {
+  border: 0;
+}
+.my_navbar.navbar-default .navbar-toggle:focus,
+.my_navbar.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+.my_navbar.navbar-default .navbar-toggle .icon-bar {
+  background-color: #2b83ff;
+}
+.my_navbar.navbar-default .navbar-toggle:focus .icon-bar,
+.my_navbar.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: #031c4e;
+}
+
+.my_navbar .dropdown-menu > li > a:focus,
+.my_navbar .dropdown-menu > li > a:hover {
+  background-color: rgba(43, 131, 255, 0.103);
+}
+
+/* ----- main ----- */
+
+/* ----- footer ----- */
+
+/* ----- media ----- */
+/* cambio range navbar collapse */
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
