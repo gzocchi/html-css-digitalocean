@@ -5,7 +5,8 @@ body {
   color: #666a72;
 }
 header #jumbotron,
-main > section {
+main > section,
+footer {
   padding: 51px 0;
 }
 
@@ -254,10 +255,9 @@ figcaption,
   color: #031c4e;
 }
 
-/* features */
-
 /* service */
-#service {
+#service,
+#account {
   background-image: linear-gradient(#0047c5, #00209b);
 }
 #service table {
@@ -267,7 +267,7 @@ table tr:first-child > td {
   border-top: 0;
 }
 table a:hover {
-color: #ffffff;
+  color: #ffffff;
 }
 
 /* development */
@@ -281,6 +281,11 @@ color: #ffffff;
 #development img {
   width: 50%;
   margin-bottom: 20px;
+}
+
+/* account */
+#account .btn_white {
+  border-color: #ffffff;
 }
 
 /* ----- footer ----- */
