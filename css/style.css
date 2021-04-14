@@ -257,6 +257,18 @@ figcaption,
 /* features */
 
 /* service */
+#service {
+  background-image: linear-gradient(#0047c5, #00209b);
+}
+#service table {
+  font-size: 0.8em;
+}
+table tr:first-child > td {
+  border-top: 0;
+}
+table a:hover {
+color: #ffffff;
+}
 
 /* development */
 #development > .container > h2 {
