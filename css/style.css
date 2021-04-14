@@ -289,7 +289,44 @@ table a:hover {
 }
 
 /* ----- footer ----- */
+footer {
+  background-color: #031c4e;
+  color: #adadad;
+}
 
+.social i {
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+.social a {
+  color: inherit;
+}
+
+footer img {
+  height: 30px;
+}
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 0.7em;
+}
+footer h4 {
+  font-size: 1em;
+}
+footer h5 {
+  margin-bottom: 5px;
+  font-size: 0.8em;
+}
+
+footer ul > li {
+  margin: 5px 0;
+  font-size: 0.7em;
+}
+footer ul a,
+footer ul a:hover {
+  text-decoration: none;
+  color: inherit;
+}
 /* ----- media ----- */
 @media screen and (max-width: 991px) {
   /* navbar */
