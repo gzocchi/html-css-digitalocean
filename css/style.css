@@ -331,6 +331,59 @@ footer ul a:hover {
   text-decoration: none;
   color: inherit;
 }
+
+/* helper shark */
+.helper_shark {
+  position: fixed;
+  right: 3%;
+  left: auto;
+  bottom: 3%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  border-radius: 5px;
+  background-color: #006aff;
+  cursor: pointer;
+}
+
+.helper_shark img {
+  height: 100%;
+  padding: 5px;
+}
+
+.shark_note {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  height: 23px;
+  width: 23px;
+  vertical-align: middle;
+  font-size: 0.7em;
+  background-color: red;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.shark_text {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  right: 105%;
+  left: auto;
+  padding: 5px;
+  color: #031c4e;
+  background-color: #ffffff;
+  border: 1px solid #006aff;
+  border-radius: 5px;
+  margin-bottom: 0;
+  opacity: 0;
+  transform: all 0.1s linear;
+}
+
+.helper_shark:hover .shark_text {
+  opacity: 1;
+}
+
 /* ----- media ----- */
 @media screen and (max-width: 991px) {
   /* navbar */
@@ -388,5 +441,20 @@ footer ul a:hover {
   /* development */
   #deployments img {
     width: 90%;
+  }
+
+  /* helper shark */
+  .helper_shark {
+    position: fixed;
+    right: auto;
+    left: 3%;
+    bottom: 15%;
+    transform: translate(-0%, -50%);
+  }
+  .shark_text {
+    position: absolute;
+    bottom: -100%;
+    right: auto;
+    left: 0;
   }
 }
