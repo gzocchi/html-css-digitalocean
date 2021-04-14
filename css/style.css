@@ -200,7 +200,8 @@ main > section {
 }
 
 /* developers */
-#developers {
+#developers,
+#development {
   background-color: #f3f5f9;
 }
 
@@ -208,12 +209,17 @@ main > section {
   margin-bottom: 40px;
 }
 
-#developers img {
+figure {
   width: 45%;
+  margin: 0 auto;
   min-width: 230px;
 }
+#developers img {
+  width: 100%;
+}
 
-#developers figcaption {
+figcaption,
+#development a {
   font-size: 0.7em;
   margin: 15px 0;
 }
@@ -231,15 +237,28 @@ main > section {
 }
 
 /* features */
+
 /* service */
+
 /* development */
+#development > .container > h2 {
+  margin-bottom: 60px;
+}
+#development figure {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+#development img {
+  width: 50%;
+  margin-bottom: 20px;
+}
 
 /* ----- footer ----- */
 
 /* ----- media ----- */
-/* cambio range navbar collapse */
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
   /* navbar */
+  /* cambio range navbar collapse */
   .navbar-header {
     float: none;
   }
@@ -274,5 +293,13 @@ main > section {
   }
   .login_col p {
     font-size: 0.6em;
+  }
+  /* developers */
+  figure {
+    margin: 40px auto;
+  }
+  /* development */
+  #deployments img {
+    width: 90%;
   }
 }
