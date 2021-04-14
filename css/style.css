@@ -235,6 +235,24 @@ figcaption,
 .figure_change a:first-child {
   background-color: #2b83ff;
 }
+/* carousel */
+.fake_carousel {
+  position: relative;
+}
+[class*="chevron"] {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.4em;
+  cursor: pointer;
+}
+.chevron_sx {
+  left: 24%;
+}
+.chevron_dx {
+  right: 24%;
+  color: #031c4e;
+}
 
 /* features */
 
