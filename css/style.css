@@ -173,6 +173,8 @@ footer {
   margin-bottom: 20px;
 }
 #customer img {
+  height: 100px;
+  max-width: 90%;
   cursor: pointer;
 }
 #customer p {
@@ -263,15 +265,24 @@ figcaption,
 #account {
   background-image: linear-gradient(#0047c5, #00209b);
 }
-#service table {
+#service table,
+.nesting_table {
   font-size: 0.8em;
   color: #adadad;
 }
 table tr:first-child > td {
   border-top: 0;
 }
-table a:hover {
+table a:hover,
+.nesting_table a:hover {
   color: #ffffff;
+}
+
+.nesting_col {
+  margin-bottom: 10px;
+}
+.nesting_col .nesting_table:not(.borderless) {
+  border-bottom: 1px solid #adadad;
 }
 
 /* development */
@@ -437,6 +448,10 @@ footer ul a:hover {
   /* developers */
   figure {
     margin: 40px auto;
+  }
+  /* service */
+  .nesting_table {
+    font-size: 0.7em;
   }
   /* development */
   #deployments img {
